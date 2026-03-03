@@ -1,0 +1,146 @@
+[
+  {
+    "id": "crowbar",
+    "name": "Crowbar",
+    "address": "294 King St, Newtown NSW 2042",
+    "description": "Crowbar is Sydney's premier underground metal and punk venue. Located in the heart of Newtown, it has been the spiritual home of Sydney's heavy music scene for years, hosting local and international acts in an intimate, no-frills environment.",
+    "image": null,
+    "bookingEmail": null,
+    "website": "https://www.crowbarsydney.com.au"
+  },
+  {
+    "id": "duke-of-enmore",
+    "name": "Duke of Enmore",
+    "address": "231 Enmore Rd, Enmore NSW 2042",
+    "description": "The Duke of Enmore is a beloved inner-west pub venue with a dedicated live music room. A regular stop for rock and metal acts touring Sydney, it offers a warm atmosphere and strong community ties to the local scene.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "moshpit",
+    "name": "MOSHPIT",
+    "address": "Sydney CBD, NSW",
+    "description": "MOSHPIT is a dedicated metal and hard rock venue in the Sydney CBD, providing a central location for the city's metal faithful. Known for its energetic atmosphere and commitment to heavy music.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "burdekin-hotel",
+    "name": "Burdekin Hotel",
+    "address": "2 Oxford St, Darlinghurst NSW 2010",
+    "description": "The Burdekin Hotel is an Oxford Street institution with multiple rooms hosting live music across rock, metal, and alternative genres. A well-known Sydney landmark for night entertainment.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "the-vanguard",
+    "name": "The Vanguard",
+    "address": "42 King St, Newtown NSW 2042",
+    "description": "The Vanguard is an eclectic venue in Newtown that hosts everything from metal to burlesque. With excellent sound and an atmospheric setting, it regularly features heavier acts alongside its diverse programming.",
+    "image": null,
+    "bookingEmail": null,
+    "website": "https://thevanguard.com.au"
+  },
+  {
+    "id": "lansdowne-hotel",
+    "name": "Lansdowne Hotel",
+    "address": "2-6 City Rd, Chippendale NSW 2008",
+    "description": "The Lansdowne Hotel sits on the edge of the city near Newtown, offering a grungy, authentic live music experience. A favourite among the metal and punk crowds, it has hosted countless memorable shows over the years.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "chuck-trailers-cbd",
+    "name": "Chuck Trailer's CBD",
+    "address": "Sydney CBD, NSW",
+    "description": "Chuck Trailer's CBD is a metal-friendly bar and venue in the Sydney CBD. Known for its rock and metal programming, it provides a convenient city-centre option for metal fans who don't want to travel to the inner west.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "oxford-art-factory",
+    "name": "Oxford Art Factory",
+    "address": "38-46 Oxford St, Darlinghurst NSW 2010",
+    "description": "Oxford Art Factory is a multi-room live music and arts venue on Oxford Street. With capacity for mid-sized shows and an eclectic booking policy, it regularly features metal and rock acts from Australia and abroad.",
+    "image": null,
+    "bookingEmail": null,
+    "website": "https://www.oxfordartfactory.com"
+  },
+  {
+    "id": "elton-chong",
+    "name": "Elton Chong",
+    "address": "Sydney, NSW",
+    "description": "Elton Chong is a venue within the Sydney metal circuit, regularly featuring local heavy acts and providing a platform for emerging bands in the scene.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "darling-nikkis",
+    "name": "Darling Nikki's",
+    "address": "Sydney, NSW",
+    "description": "Darling Nikki's is a rock and metal-oriented bar that hosts live music and DJ nights, catering to Sydney's hard rock and metal community.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "wings-and-tins",
+    "name": "Wings and Tins",
+    "address": "Sydney, NSW",
+    "description": "Wings and Tins is a casual bar and live music venue that has become part of Sydney's rock and metal gig circuit, known for its relaxed atmosphere and support of local talent.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "marrickville-bowlo",
+    "name": "Marrickville Bowlo",
+    "address": "Marrickville Road, Marrickville NSW 2204",
+    "description": "The Marrickville Bowling Club (Marrickville Bowlo) has transformed into a major live music hub. With a large outdoor stage and indoor spaces, it hosts some of Sydney's biggest metal and rock shows in an iconic bowls club setting.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "the-bridge-hotel",
+    "name": "The Bridge Hotel",
+    "address": "135 Victoria Rd, Rozelle NSW 2039",
+    "description": "The Bridge Hotel in Rozelle is a classic Sydney pub venue with a dedicated live music room. It has a long history of hosting rock and metal acts and remains a staple of the Sydney live music calendar.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "war-on-the-farm",
+    "name": "War on the Farm",
+    "address": "Sydney, NSW",
+    "description": "War on the Farm is a festival-style metal event/venue concept operating within the Sydney and greater NSW region, providing an outdoor heavy music experience for the community.",
+    "image": null,
+    "bookingEmail": null,
+    "website": null
+  },
+  {
+    "id": "manning-bar",
+    "name": "Manning Bar",
+    "address": "University of Sydney, Manning Rd, Camperdown NSW 2006",
+    "description": "Manning Bar is the legendary on-campus venue at the University of Sydney with a rich history dating back decades. It has hosted countless iconic rock and metal acts and remains one of Sydney's most cherished live music venues.",
+    "image": null,
+    "bookingEmail": null,
+    "website": "https://www.manningbar.com"
+  },
+  {
+    "id": "factory-theatre",
+    "name": "Factory Theatre",
+    "address": "105 Victoria Rd, Marrickville NSW 2204",
+    "description": "Factory Theatre is one of Sydney's most respected mid-capacity live music venues. With superb acoustics and a dedicated approach to live music, it is a go-to destination for metal and rock touring acts as well as local favourites.",
+    "image": null,
+    "bookingEmail": null,
+    "website": "https://www.factorytheatre.com.au"
+  }
+]
