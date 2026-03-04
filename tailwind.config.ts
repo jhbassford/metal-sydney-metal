@@ -20,6 +20,7 @@ const config: Config = {
         heading: ['var(--font-cinzel)', 'serif'],
         body: ['var(--font-inter)', 'sans-serif'],
         metal: ['var(--font-metal)', 'serif'],
+        slab: ['var(--font-roboto-slab)', 'serif'],
       },
     },
   },

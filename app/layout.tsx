@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Cinzel, Inter, UnifrakturMaguntia } from 'next/font/google'
+import { Cinzel, Inter, UnifrakturMaguntia, Roboto_Slab } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
@@ -15,6 +15,13 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
+})
+
+const robotoSlab = Roboto_Slab({
+  subsets: ['latin'],
+  variable: '--font-roboto-slab',
+  display: 'swap',
+  weight: ['100', '300'],
 })
 
 const unifraktur = UnifrakturMaguntia({
@@ -42,7 +49,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${inter.variable} ${unifraktur.variable}`}>
+    <html lang="en" className={`${cinzel.variable} ${inter.variable} ${unifraktur.variable} ${robotoSlab.variable}`}>
       <body className="bg-background text-text-primary font-body min-h-screen flex flex-col antialiased">
         <Nav />
         <main className="flex-1">{children}</main>
