@@ -19,6 +19,7 @@ const config: Config = {
       fontFamily: {
         heading: ['var(--font-cinzel)', 'serif'],
         body: ['var(--font-inter)', 'sans-serif'],
+        metal: ['var(--font-metal)', 'serif'],
       },
     },
   },

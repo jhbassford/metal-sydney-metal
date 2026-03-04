@@ -52,19 +52,19 @@ export default function BandsClient({ bands }: BandsClientProps) {
   return (
     <>
       {/* Search + filter bar */}
-      <div className="flex flex-wrap items-center gap-3 mb-10 p-4 bg-surface border border-gray-800">
+      <div className="flex flex-wrap items-center gap-2 mb-8 p-2 bg-surface border border-gray-800">
         <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search bands..."
-          className="bg-background border border-gray-700 text-gray-300 text-xs px-4 py-2.5 font-heading tracking-wider focus:border-accent focus:outline-none placeholder:text-gray-600 w-48"
+          className="bg-background border border-gray-700 text-gray-300 text-xs px-4 py-1.5 font-heading tracking-wider focus:border-accent focus:outline-none placeholder:text-gray-600 w-48"
         />
 
         <select
           value={genreFilter}
           onChange={(e) => setGenreFilter(e.target.value)}
-          className="bg-background border border-gray-700 text-gray-300 text-xs px-4 py-2.5 font-heading uppercase tracking-wider focus:border-accent focus:outline-none cursor-pointer"
+          className="bg-background border border-gray-700 text-gray-300 text-xs px-4 py-1.5 font-heading uppercase tracking-wider focus:border-accent focus:outline-none cursor-pointer"
         >
           <option value="">Filter by Genre</option>
           {genres.map((g) => (
@@ -77,7 +77,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
         <select
           value={locationFilter}
           onChange={(e) => setLocationFilter(e.target.value)}
-          className="bg-background border border-gray-700 text-gray-300 text-xs px-4 py-2.5 font-heading uppercase tracking-wider focus:border-accent focus:outline-none cursor-pointer"
+          className="bg-background border border-gray-700 text-gray-300 text-xs px-4 py-1.5 font-heading uppercase tracking-wider focus:border-accent focus:outline-none cursor-pointer"
         >
           <option value="">Filter by Location</option>
           {locations.map((l) => (
@@ -89,7 +89,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
 
         <button
           onClick={resetFilters}
-          className="border border-gray-700 text-gray-400 hover:border-accent hover:text-accent text-xs px-4 py-2.5 font-heading uppercase tracking-wider transition-colors"
+          className="border border-gray-700 text-gray-400 hover:border-accent hover:text-accent text-xs px-4 py-1.5 font-heading uppercase tracking-wider transition-colors"
         >
           Reset Filters
         </button>
@@ -109,10 +109,10 @@ export default function BandsClient({ bands }: BandsClientProps) {
           {filtered.map((band) => (
             <div
               key={band.id}
-              className="card flex flex-col items-center p-4 gap-3"
+              className="flex flex-col items-center bg-[#4a4a4a] border border-[#5a5a5a] hover:border-gray-300 transition-colors duration-200 overflow-hidden"
             >
-              {/* Photo — 250×250 square */}
-              <div className="w-full aspect-square max-w-[250px] relative bg-gray-800 flex items-center justify-center overflow-hidden">
+              {/* Photo — full-width square */}
+              <div className="w-full aspect-square relative bg-[#5a5a5a] flex items-center justify-center overflow-hidden">
                 {band.image ? (
                   <Image
                     src={band.image}
@@ -130,7 +130,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
               </div>
 
               {/* Band info */}
-              <div className="w-full text-center flex flex-col gap-0.5">
+              <div className="w-full text-center flex flex-col gap-0.5 bg-[#3a3a3a] px-3 pt-3 pb-1">
                 <h3 className="font-heading font-bold text-white text-xs uppercase tracking-wide leading-snug">
                   {band.name}
                 </h3>
@@ -141,7 +141,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
               </div>
 
               {/* Social buttons */}
-              <div className="flex gap-2 mt-auto w-full pt-1">
+              <div className="flex gap-2 w-full bg-[#3a3a3a] px-3 pb-3">
                 {band.facebook ? (
                   <a
                     href={band.facebook}
@@ -152,7 +152,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
                     Facebook
                   </a>
                 ) : (
-                  <span className="flex-1 text-center btn-ghost py-1.5 text-[10px]">
+                  <span className="flex-1 text-center btn-ghost py-1.5 border-gray-500 text-[10px]">
                     Facebook
                   </span>
                 )}
@@ -166,7 +166,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
                     Bandcamp
                   </a>
                 ) : (
-                  <span className="flex-1 text-center btn-ghost py-1.5 text-[10px]">
+                  <span className="flex-1 text-center btn-ghost py-1.5 border-gray-500 text-[10px]">
                     Bandcamp
                   </span>
                 )}

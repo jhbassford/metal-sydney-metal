@@ -20,8 +20,8 @@ export default async function GigGuidePage({ searchParams }: PageProps) {
 
   return (
     <>
-      <Hero>
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase tracking-widest leading-tight">
+      <Hero minHeight="min-h-[200px] md:min-h-[260px]">
+        <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white uppercase tracking-widest leading-none">
           Sydney Metal
           <br />
           <span className="text-accent">Gig Guide</span>
@@ -76,7 +76,7 @@ export default async function GigGuidePage({ searchParams }: PageProps) {
 
         {/* Event list */}
         {events.length === 0 ? (
-          <div className="text-center py-24 border border-gray-800">
+          <div className="text-center py-64 border border-gray-700">
             {!process.env.GOOGLE_CALENDAR_ID ? (
               <>
                 <p className="font-heading text-gray-600 uppercase tracking-widest text-sm">

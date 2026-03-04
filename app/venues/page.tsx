@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import Hero from '@/components/Hero'
 import venuesData from '@/data/venues.json'
 
 export const metadata: Metadata = {
@@ -12,13 +11,13 @@ export const metadata: Metadata = {
 export default function VenuesPage() {
   return (
     <>
-      <Hero>
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase tracking-widest leading-tight">
-          <span className="text-accent">Venues</span>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-0">
+        <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white uppercase tracking-widest mb-4">
+          Venues
         </h1>
-      </Hero>
+      </div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Map embed */}
         <div className="mb-10 border border-gray-800 overflow-hidden">
           <iframe
@@ -33,7 +32,7 @@ export default function VenuesPage() {
           />
         </div>
 
-        <p className="text-gray-500 text-sm leading-relaxed mb-10 max-w-3xl border-l-2 border-accent pl-4">
+        <p className="text-gray-500 text-sm leading-relaxed mb-10 max-w-3xl">
           The following venues in Sydney host Rock &amp; Metal events on a
           regular basis. Support your local venues — without them, there is no
           scene. If a venue is missing, email{' '}
@@ -45,11 +44,11 @@ export default function VenuesPage() {
           </a>
         </p>
 
-        <div className="space-y-5">
+        <div className="space-y-0">
           {venuesData.map((venue) => (
             <div
               key={venue.id}
-              className="card flex flex-col sm:flex-row items-start gap-5 p-5 group hover:border-accent/50"
+              className="flex flex-col sm:flex-row items-start gap-5 py-6 border-b border-gray-800 group"
             >
               {/* Photo — circular 100×100 */}
               <div className="relative w-[100px] h-[100px] shrink-0 rounded-full bg-gray-800 flex items-center justify-center overflow-hidden self-center sm:self-start mt-1">
@@ -74,7 +73,7 @@ export default function VenuesPage() {
                 <h2 className="font-heading text-xl font-bold text-white uppercase tracking-wider group-hover:text-accent transition-colors">
                   {venue.name}
                 </h2>
-                <p className="text-accent text-xs font-heading uppercase tracking-wider mt-1">
+                <p className="text-gray-400 text-xs font-heading uppercase tracking-wider mt-1">
                   {venue.address}
                 </p>
                 <p className="text-gray-500 text-sm mt-3 leading-relaxed">
@@ -94,7 +93,7 @@ export default function VenuesPage() {
                       href={venue.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-outline text-xs py-1.5"
+                      className="text-accent hover:underline text-xs font-heading uppercase tracking-wider"
                     >
                       Visit Website →
                     </a>

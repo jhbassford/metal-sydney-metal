@@ -6,31 +6,31 @@ export default function HomePage() {
   return (
     <>
       {/* Full-height hero */}
-      <Hero fullHeight>
-        <div className="flex flex-col items-center gap-6">
+      <Hero minHeight="min-h-[520px] md:min-h-[580px]">
+        <div className="flex flex-col items-center gap-4">
           <Image
             src="/images/msm-logo.png"
             alt="Metal Sydney Metal"
-            width={320}
-            height={275}
+            width={240}
+            height={206}
             className="drop-shadow-2xl"
             priority
           />
 
-          <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-body">
+          <p className="text-gray-300 text-sm max-w-xl mx-auto leading-relaxed font-body">
             Welcome to the homepage of the Sydney metal community. The one-stop
             place for everything metal, everything Sydney.
           </p>
 
           <Link href="/gig-guide" className="btn-accent text-sm">
-            Gig Calendar
+            GIG CALENDAR
           </Link>
         </div>
       </Hero>
 
       {/* Feature cards */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid md:grid-cols-3 gap-6">
+      <section className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid grid-cols-1 gap-4">
           <div className="card p-7 group hover:border-accent/50 transition-colors">
             <div className="w-8 h-0.5 bg-accent mb-5" />
             <h2 className="font-heading text-lg font-bold text-white uppercase tracking-wider mb-3">

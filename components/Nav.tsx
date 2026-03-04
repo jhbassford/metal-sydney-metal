@@ -31,15 +31,15 @@ export default function Nav() {
           {/* Logo — centered on desktop, left on mobile */}
           <Link
             href="/"
-            className="font-heading text-xl sm:text-2xl lg:text-3xl font-bold text-white hover:text-accent transition-colors tracking-widest uppercase w-full text-center hidden lg:block"
+            className="font-metal text-[52px] lg:text-[64px] text-white hover:text-accent transition-colors w-full text-center hidden lg:block leading-none"
           >
             metal sydney metal
           </Link>
           <Link
             href="/"
-            className="font-heading text-lg font-bold text-white hover:text-accent transition-colors tracking-widest uppercase lg:hidden"
+            className="font-metal text-[40px] text-white hover:text-accent transition-colors lg:hidden leading-none"
           >
-            Metal Sydney Metal
+            metal sydney metal
           </Link>
 
           {/* Hamburger — mobile only */}
@@ -65,7 +65,7 @@ export default function Nav() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white hover:bg-accent text-[11px] font-heading uppercase tracking-wider transition-colors px-3 py-1"
+              className="text-gray-400 hover:text-white hover:bg-accent text-[10px] font-sans transition-colors px-3 py-1"
             >
               {link.label}
             </a>
@@ -73,7 +73,7 @@ export default function Nav() {
             <Link
               key={link.label}
               href={link.href}
-              className={`text-[11px] font-heading uppercase tracking-wider transition-colors px-3 py-1 ${
+              className={`text-[10px] font-sans transition-colors px-3 py-1 ${
                 pathname === link.href
                   ? 'bg-accent text-white'
                   : 'text-gray-400 hover:text-white hover:bg-accent'
