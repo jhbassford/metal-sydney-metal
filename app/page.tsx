@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function HomePage() {
@@ -6,30 +7,23 @@ export default function HomePage() {
     <>
       {/* Full-height hero */}
       <Hero fullHeight>
-        <div className="flex flex-col items-center gap-7">
-          <p className="text-accent font-heading uppercase tracking-[0.4em] text-xs border border-accent/40 px-4 py-1">
-            Sydney Metal Community
-          </p>
+        <div className="flex flex-col items-center gap-6">
+          <Image
+            src="/images/msm-logo.png"
+            alt="Metal Sydney Metal"
+            width={320}
+            height={275}
+            className="drop-shadow-2xl"
+            priority
+          />
 
-          <h1 className="font-heading font-black text-white uppercase leading-none drop-shadow-2xl">
-            <span className="block text-5xl sm:text-7xl lg:text-8xl tracking-widest">
-              metal
-            </span>
-            <span className="block text-6xl sm:text-8xl lg:text-9xl text-accent tracking-widest">
-              sydney
-            </span>
-            <span className="block text-5xl sm:text-7xl lg:text-8xl tracking-widest">
-              metal
-            </span>
-          </h1>
-
-          <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-body mt-2">
+          <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-body">
             Welcome to the homepage of the Sydney metal community. The one-stop
             place for everything metal, everything Sydney.
           </p>
 
-          <Link href="/gig-guide" className="btn-accent mt-2 text-sm">
-            Click here for all events
+          <Link href="/gig-guide" className="btn-accent text-sm">
+            Gig Calendar
           </Link>
         </div>
       </Hero>

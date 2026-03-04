@@ -19,6 +19,20 @@ export default function VenuesPage() {
       </Hero>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Map embed */}
+        <div className="mb-10 border border-gray-800 overflow-hidden">
+          <iframe
+            src="https://maps.google.com/maps?q=Sydney+metal+music+venues&output=embed&z=13&ll=-33.8688,151.2093"
+            width="100%"
+            height="380"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Sydney Metal Venues Map"
+          />
+        </div>
+
         <p className="text-gray-500 text-sm leading-relaxed mb-10 max-w-3xl border-l-2 border-accent pl-4">
           The following venues in Sydney host Rock &amp; Metal events on a
           regular basis. Support your local venues — without them, there is no
@@ -35,29 +49,27 @@ export default function VenuesPage() {
           {venuesData.map((venue) => (
             <div
               key={venue.id}
-              className="card flex flex-col sm:flex-row gap-0 overflow-hidden group hover:border-accent/50"
+              className="card flex flex-col sm:flex-row items-start gap-5 p-5 group hover:border-accent/50"
             >
-              {/* Photo — 160×160 */}
-              <div className="relative w-full sm:w-[160px] h-48 sm:h-auto shrink-0 bg-gray-900 flex items-center justify-center overflow-hidden">
+              {/* Photo — circular 100×100 */}
+              <div className="relative w-[100px] h-[100px] shrink-0 rounded-full bg-gray-800 flex items-center justify-center overflow-hidden self-center sm:self-start mt-1">
                 {venue.image ? (
                   <Image
                     src={venue.image}
                     alt={venue.name}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 640px) 100vw, 160px"
+                    sizes="100px"
                   />
                 ) : (
-                  <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-br from-gray-900 to-[#0a0a0a] p-4">
-                    <span className="font-heading text-4xl font-bold text-gray-800 select-none">
-                      {venue.name.charAt(0).toUpperCase()}
-                    </span>
-                  </div>
+                  <span className="font-heading text-3xl font-bold text-gray-500 select-none">
+                    {venue.name.charAt(0).toUpperCase()}
+                  </span>
                 )}
               </div>
 
               {/* Details */}
-              <div className="flex-1 p-6">
+              <div className="flex-1 p-1">
                 <h2 className="font-heading text-xl font-bold text-white uppercase tracking-wider group-hover:text-accent transition-colors">
                   {venue.name}
                 </h2>

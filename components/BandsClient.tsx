@@ -18,6 +18,7 @@ interface BandsClientProps {
 }
 
 export default function BandsClient({ bands }: BandsClientProps) {
+  const [search, setSearch] = useState('')
   const [genreFilter, setGenreFilter] = useState('')
   const [locationFilter, setLocationFilter] = useState('')
 
@@ -34,22 +35,32 @@ export default function BandsClient({ bands }: BandsClientProps) {
   const filtered = useMemo(
     () =>
       bands.filter((b) => {
+        if (search && !b.name.toLowerCase().includes(search.toLowerCase())) return false
         if (genreFilter && b.genre !== genreFilter) return false
         if (locationFilter && b.location !== locationFilter) return false
         return true
       }),
-    [bands, genreFilter, locationFilter]
+    [bands, search, genreFilter, locationFilter]
   )
 
   const resetFilters = () => {
+    setSearch('')
     setGenreFilter('')
     setLocationFilter('')
   }
 
   return (
     <>
-      {/* Filter bar */}
+      {/* Search + filter bar */}
       <div className="flex flex-wrap items-center gap-3 mb-10 p-4 bg-surface border border-gray-800">
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search bands..."
+          className="bg-background border border-gray-700 text-gray-300 text-xs px-4 py-2.5 font-heading tracking-wider focus:border-accent focus:outline-none placeholder:text-gray-600 w-48"
+        />
+
         <select
           value={genreFilter}
           onChange={(e) => setGenreFilter(e.target.value)}
@@ -101,7 +112,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
               className="card flex flex-col items-center p-4 gap-3"
             >
               {/* Photo — 250×250 square */}
-              <div className="w-full aspect-square max-w-[250px] relative bg-gray-900 flex items-center justify-center overflow-hidden">
+              <div className="w-full aspect-square max-w-[250px] relative bg-gray-800 flex items-center justify-center overflow-hidden">
                 {band.image ? (
                   <Image
                     src={band.image}
@@ -111,7 +122,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
                     sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 250px"
                   />
                 ) : (
-                  <span className="font-heading text-4xl font-bold text-gray-700 select-none">
+                  <span className="font-heading text-4xl font-bold text-gray-500 select-none">
                     {band.name.charAt(0).toUpperCase()}
                   </span>
                 )}
