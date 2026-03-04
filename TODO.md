@@ -4,7 +4,7 @@
 
 - [ ] **Configure Google Calendar** — add `GOOGLE_CALENDAR_ID` and `GOOGLE_API_KEY` to `.env.local` (and Vercel env vars) so the Gig Guide shows real events instead of the "Calendar not configured" placeholder. The calendar ID is available in Google Calendar → Settings → Integrate calendar.
 
-- [ ] **Scrape remaining bands** — the scraper only collected bands starting with letters A–12 (first page of Wix results). The Wix bands page has a "Load More" button; check if there are more pages and re-run `npm run scrape:bands` or adjust the scraper to paginate fully.
+- [ ] **Add missing bands** — the initial scrape only captured bands starting with A–12 (first page of Wix results). Manually add any missing bands to `data/bands.json`.
 
 - [ ] **Music page** (`/music`) — currently a placeholder. The Wix site has music content; flesh this out (embed Bandcamp player, link to releases, etc.).
 
@@ -14,12 +14,7 @@
 
 ## Content maintenance
 
-- [ ] Re-run scrapers periodically to keep band/venue data in sync with the Wix site:
-  ```bash
-  npm run scrape:bands
-  npm run scrape:venues
-  ```
-- [ ] Review scraped venue addresses — the scraper uses a heuristic to extract addresses and some may be missing or wrong. Manually verify `data/venues.json`.
+- [ ] Review scraped venue addresses — the scraper used a heuristic to extract addresses and some may be missing or wrong. Manually verify `data/venues.json`.
 
 - [ ] Some bands in `data/bands.json` may be missing Facebook or Bandcamp links (shown as greyed-out buttons). Fill these in manually where possible.
 

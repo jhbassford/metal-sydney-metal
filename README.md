@@ -46,8 +46,8 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run dev` | Start local dev server |
 | `npm run build` | Production build |
 | `npm run lint` | ESLint |
-| `npm run scrape:bands` | Scrape bands from Wix site → `data/bands.json` + `public/images/bands/` |
-| `npm run scrape:venues` | Scrape venues from Wix site → `data/venues.json` + `public/images/venues/` |
+| `npm run scrape:bands` | **One-time seed** — scrape bands from Wix into `data/bands.json` + `public/images/bands/` |
+| `npm run scrape:venues` | **One-time seed** — scrape venues from Wix into `data/venues.json` + `public/images/venues/` |
 | `npm run compare` | Visual diff vs live Wix site (requires `npm run dev` running) → `scripts/screenshots/report.html` |
 
 ---
@@ -67,14 +67,7 @@ The `/gig-guide` page fetches events server-side and revalidates every hour (ISR
 
 ## Updating Band & Venue Data
 
-The scrapers pull directly from the live Wix site. Re-run them whenever the Wix content changes:
-
-```bash
-npm run scrape:bands    # updates data/bands.json and public/images/bands/
-npm run scrape:venues   # updates data/venues.json and public/images/venues/
-```
-
-### Manual edits
+Band and venue data live in `data/bands.json` and `data/venues.json`. These were seeded from the Wix site using the scraper scripts, but going forward they should be **edited manually** — the scrapers are not intended for ongoing use.
 
 **Bands** — edit `data/bands.json`:
 
