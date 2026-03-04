@@ -39,6 +39,19 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start local dev server |
+| `npm run build` | Production build |
+| `npm run lint` | ESLint |
+| `npm run scrape:bands` | Scrape bands from Wix site → `data/bands.json` + `public/images/bands/` |
+| `npm run scrape:venues` | Scrape venues from Wix site → `data/venues.json` + `public/images/venues/` |
+| `npm run compare` | Visual diff vs live Wix site (requires `npm run dev` running) → `scripts/screenshots/report.html` |
+
+---
+
 ## Enabling Google Calendar on the Gig Guide
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
@@ -52,9 +65,18 @@ The `/gig-guide` page fetches events server-side and revalidates every hour (ISR
 
 ---
 
-## Adding Bands
+## Updating Band & Venue Data
 
-Edit `data/bands.json`. Each entry follows this schema:
+The scrapers pull directly from the live Wix site. Re-run them whenever the Wix content changes:
+
+```bash
+npm run scrape:bands    # updates data/bands.json and public/images/bands/
+npm run scrape:venues   # updates data/venues.json and public/images/venues/
+```
+
+### Manual edits
+
+**Bands** — edit `data/bands.json`:
 
 ```json
 {
@@ -68,14 +90,7 @@ Edit `data/bands.json`. Each entry follows this schema:
 }
 ```
 
-- `image` — place files in `/public/images/bands/`. Set to `null` if no photo.
-- `facebook` / `bandcamp` — set to `null` to show greyed-out inactive button.
-
----
-
-## Adding Venues
-
-Edit `data/venues.json`. Each entry follows this schema:
+**Venues** — edit `data/venues.json`:
 
 ```json
 {
@@ -89,25 +104,7 @@ Edit `data/venues.json`. Each entry follows this schema:
 }
 ```
 
-- `image` — place files in `/public/images/venues/`. Set to `null` for placeholder.
-- `bookingEmail` / `website` — optional; set to `null` to hide.
-
----
-
-## Adding Hero Images
-
-Each page uses the `<Hero>` component. To add real photos:
-
-1. Place images in `/public/images/heroes/` (e.g. `home.jpg`, `gig-guide.jpg`)
-2. Pass the path via the `imagePath` prop:
-
-```tsx
-<Hero imagePath="/images/heroes/home.jpg">
-  ...
-</Hero>
-```
-
-Dark overlay is applied automatically for text readability.
+Set `image`, `facebook`, `bandcamp`, `bookingEmail`, or `website` to `null` to hide/placeholder them.
 
 ---
 
@@ -115,29 +112,38 @@ Dark overlay is applied automatically for text readability.
 
 ```
 app/
-  layout.tsx          Root layout (Nav + Footer)
+  layout.tsx          Root layout (Nav + Footer, fonts)
   page.tsx            Home (/)
-  gig-guide/          /gig-guide — Google Calendar events
-  bands/              /bands — band directory
-  venues/             /venues — venue directory
+  gig-guide/          /gig-guide — Google Calendar events list
+  bands/              /bands — band directory with filter
+  venues/             /venues — venue directory with map
   music/              /music — placeholder
   feed/               /feed — placeholder
 
 components/
-  Nav.tsx             Sticky top nav with hamburger (client)
+  Nav.tsx             Sticky two-row nav with hamburger (client)
   Footer.tsx          Footer with social links
-  Hero.tsx            Full-width hero section
-  BandsClient.tsx     Band grid with genre/location filter (client)
+  Hero.tsx            Full-width hero (cathedral photo or dark gradient)
+  BandsClient.tsx     Band grid with search + genre/location filter (client)
 
 lib/
-  calendar.ts         Google Calendar API helper (server-only)
+  calendar.ts         Google Calendar API helper (server-only, ISR)
 
 data/
-  bands.json          Band data (seed with 24 "A" bands)
-  venues.json         Venue data (16 Sydney venues)
+  bands.json          24 bands scraped from Wix
+  venues.json         17 venues scraped from Wix
+
+scripts/
+  scrape-bands.js     Puppeteer scraper for the Wix bands page
+  scrape-venues.js    Puppeteer scraper for the Wix venues page
+  compare-designs.js  Puppeteer + pixelmatch visual comparison tool
 
 public/
-  images/             Static images (bands, venues, heroes)
+  images/
+    msm-logo.png      MSM skull logo
+    hero-bg.jpg       Cathedral hero background
+    bands/            Band photos (scraped)
+    venues/           Venue photos (scraped)
 ```
 
 ---
@@ -161,4 +167,4 @@ Band and venue data live in JSON files for easy CMS migration:
 
 - **Bands** → Replace `data/bands.json` import with a Sanity/Contentful fetch in `app/bands/page.tsx`
 - **Venues** → Same pattern in `app/venues/page.tsx`
-- **Calendar** → Swap the implementation in `lib/calendar.ts` (e.g. use a custom API or different calendar provider)
+- **Calendar** → Swap `lib/calendar.ts` (or point to a different calendar provider / custom API)
