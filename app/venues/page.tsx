@@ -60,6 +60,7 @@ export default function VenuesPage() {
                     fill
                     className="object-cover"
                     sizes="100px"
+                    loading="eager"
                   />
                 ) : (
                   <span className="font-heading text-3xl font-bold text-gray-500 select-none">

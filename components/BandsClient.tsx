@@ -120,6 +120,7 @@ export default function BandsClient({ bands }: BandsClientProps) {
                     fill
                     className="object-cover"
                     sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 250px"
+                    loading="eager"
                   />
                 ) : (
                   <span className="font-heading text-4xl font-bold text-gray-500 select-none">

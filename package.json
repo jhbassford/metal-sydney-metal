@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "scrape:bands": "node scripts/scrape-bands.js",
+    "scrape:venues": "node scripts/scrape-venues.js",
     "compare": "node scripts/compare-designs.js"
   },
   "dependencies": {

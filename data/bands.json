@@ -2,217 +2,217 @@
   {
     "id": "12-gauge-rampage",
     "name": "12 Gauge Rampage",
-    "genre": "Groove Metal",
+    "genre": "Brutal Death Metal/Grindcore",
     "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "above-below",
-    "name": "Above Below",
-    "genre": "Heavy Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "acrolysis",
-    "name": "Acrolysis",
-    "genre": "Technical Death Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "ad-destroyer",
-    "name": "A.D. Destroyer",
-    "genre": "Death Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
+    "image": "/images/bands/12-gauge-rampage.jpg",
+    "facebook": "https://www.facebook.com/12gaugerampage",
+    "bandcamp": "https://12gaugerampage.bandcamp.com/"
   },
   {
     "id": "adriaaan",
     "name": "Adriaaan",
-    "genre": "Post-Metal",
+    "genre": "Metalcore",
     "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "adrift-for-days",
-    "name": "Adrift for Days",
-    "genre": "Post-Metal / Doom",
-    "location": "Sydney",
-    "image": null,
-    "facebook": "https://www.facebook.com/adriftfordays",
-    "bandcamp": "https://adriftfordays.bandcamp.com"
-  },
-  {
-    "id": "aeturnus-dominion",
-    "name": "Aeturnus Dominion",
-    "genre": "Black Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "aftermath",
-    "name": "Aftermath",
-    "genre": "Thrash Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
+    "image": "/images/bands/adriaaan.jpg",
+    "facebook": "https://www.facebook.com/adriaaan.official",
     "bandcamp": null
   },
   {
     "id": "age-of-emergence",
     "name": "Age Of Emergence",
     "genre": "Progressive Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "alchemy",
-    "name": "Alchemy",
-    "genre": "Heavy Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "alienist",
-    "name": "Alienist",
-    "genre": "Death Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "all-is-fire",
-    "name": "All Is Fire",
-    "genre": "Black Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
+    "location": "Newcastle",
+    "image": "/images/bands/age-of-emergence.jpg",
+    "facebook": "https://www.facebook.com/ageofemergenceband",
+    "bandcamp": "https://ageofemergence.bandcamp.com/"
   },
   {
     "id": "amammoth",
     "name": "Amammoth",
-    "genre": "Doom / Stoner Metal",
+    "genre": "Stoner/Sludge/Doom Metal",
     "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "anglesee",
-    "name": "Anglesee",
-    "genre": "Metal",
-    "location": "NSW",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "anovaty",
-    "name": "Anovaty",
-    "genre": "Progressive Metal",
-    "location": "Newcastle",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "anoxia",
-    "name": "Anoxia",
-    "genre": "Death Metal",
-    "location": "Wollongong",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
+    "image": "/images/bands/amammoth.jpg",
+    "facebook": "https://www.facebook.com/amammoth",
+    "bandcamp": "https://amammoth.bandcamp.com/"
   },
   {
     "id": "antipope",
     "name": "AntiPope",
-    "genre": "Industrial Metal",
+    "genre": "Death n Roll",
     "location": "Sydney",
-    "image": null,
+    "image": "/images/bands/antipope.jpg",
     "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "antonamasia",
-    "name": "Antonamasia",
-    "genre": "Progressive Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "arkenstone",
-    "name": "Arkenstone",
-    "genre": "Power Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
-  },
-  {
-    "id": "artemis-blade",
-    "name": "Artemis Blade",
-    "genre": "Power Metal",
-    "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
+    "bandcamp": "https://antipope666.bandcamp.com/"
   },
   {
     "id": "arteries",
     "name": "Arteries",
     "genre": "Metalcore",
     "location": "Sydney",
-    "image": null,
-    "facebook": null,
+    "image": "/images/bands/arteries.jpg",
+    "facebook": "https://www.facebook.com/arteriesband",
+    "bandcamp": "https://arteriesband.bandcamp.com/"
+  },
+  {
+    "id": "a-d-destoyer",
+    "name": "A.D. Destoyer",
+    "genre": "Industrial Metal",
+    "location": "Sydney",
+    "image": "/images/bands/a-d-destoyer.jpg",
+    "facebook": "https://www.facebook.com/ADDESTROYER",
+    "bandcamp": "https://addestroyer.bandcamp.com/"
+  },
+  {
+    "id": "adrift-for-days",
+    "name": "Adrift for Days",
+    "genre": "Stoner/Doom Metal",
+    "location": "Sydney",
+    "image": "/images/bands/adrift-for-days.jpg",
+    "facebook": "https://www.facebook.com/adriftfordays",
+    "bandcamp": "https://adriftfordays.bandcamp.com/"
+  },
+  {
+    "id": "alchemy",
+    "name": "Alchemy",
+    "genre": "Blackened Death Metal",
+    "location": "Sydney",
+    "image": "/images/bands/alchemy.jpg",
+    "facebook": "https://www.facebook.com/AlchemyDM/",
+    "bandcamp": "https://alchemicaldeath.bandcamp.com/"
+  },
+  {
+    "id": "anglesee",
+    "name": "Anglesee",
+    "genre": "Blackened/Melodic Death Metal",
+    "location": "Sydney",
+    "image": "/images/bands/anglesee.jpg",
+    "facebook": "https://www.facebook.com/AngleseeBand",
+    "bandcamp": "https://anglesee1.bandcamp.com/"
+  },
+  {
+    "id": "antonamasia",
+    "name": "Antonamasia",
+    "genre": "Melodic/Gothic Metal",
+    "location": "Sydney",
+    "image": "/images/bands/antonamasia.png",
+    "facebook": "https://www.facebook.com/Antonamasia",
     "bandcamp": null
   },
   {
     "id": "ascend-to-reign",
     "name": "Ascend To Reign",
-    "genre": "Deathcore",
+    "genre": "Metalcore",
     "location": "Sydney",
-    "image": null,
+    "image": "/images/bands/ascend-to-reign.jpg",
+    "facebook": "https://www.facebook.com/p/Ascend-To-Reign-61564530221994/",
+    "bandcamp": null
+  },
+  {
+    "id": "above-below",
+    "name": "Above, Below",
+    "genre": "Progressive Metalcore",
+    "location": "Sydney",
+    "image": "/images/bands/above-below.jpg",
+    "facebook": "https://www.facebook.com/AboveBelowSyd",
+    "bandcamp": "https://abvblw.bandcamp.com/"
+  },
+  {
+    "id": "aeturnus-dominion",
+    "name": "Aeturnus Dominion",
+    "genre": "Death Metal",
+    "location": "Central Coast",
+    "image": "/images/bands/aeturnus-dominion.jpg",
+    "facebook": "https://www.facebook.com/AeturnusDominion/",
+    "bandcamp": "https://aeturnusdominion.bandcamp.com/releases"
+  },
+  {
+    "id": "alienist",
+    "name": "Alienist",
+    "genre": "Metalcore",
+    "location": "Wollongong",
+    "image": "/images/bands/alienist.jpg",
+    "facebook": "https://www.facebook.com/AlienistAUS/",
+    "bandcamp": null
+  },
+  {
+    "id": "anovaty",
+    "name": "Anovaty",
+    "genre": "Alternative Metal",
+    "location": "Sydney",
+    "image": "/images/bands/anovaty.png",
     "facebook": null,
+    "bandcamp": null
+  },
+  {
+    "id": "arkenstone",
+    "name": "Arkenstone",
+    "genre": "Heavy Metal",
+    "location": "Sydney",
+    "image": "/images/bands/arkenstone.jpg",
+    "facebook": "https://www.facebook.com/Arkenstonemetal/?ref=page_internal",
     "bandcamp": null
   },
   {
     "id": "astrodeath",
     "name": "Astrodeath",
-    "genre": "Psychedelic Doom",
+    "genre": "Sludge/Grunge",
     "location": "Sydney",
-    "image": null,
-    "facebook": null,
+    "image": "/images/bands/astrodeath.jpg",
+    "facebook": "https://www.facebook.com/astrodeathband",
+    "bandcamp": "https://astrodeath.bandcamp.com/"
+  },
+  {
+    "id": "acrolysis",
+    "name": "Acrolysis",
+    "genre": "Heavy Metal",
+    "location": "Sydney",
+    "image": "/images/bands/acrolysis.jpg",
+    "facebook": "https://www.facebook.com/Acrolysis/",
+    "bandcamp": "https://acrolysis.bandcamp.com/"
+  },
+  {
+    "id": "aftermath",
+    "name": "Aftermath",
+    "genre": "Death Metal",
+    "location": "Sydney",
+    "image": "/images/bands/aftermath.jpg",
+    "facebook": "https://www.facebook.com/AftermathAU/",
     "bandcamp": null
+  },
+  {
+    "id": "all-is-fire",
+    "name": "All Is Fire",
+    "genre": "Metalcore",
+    "location": "Sydney",
+    "image": "/images/bands/all-is-fire.jpg",
+    "facebook": "https://www.facebook.com/AllIsFireBandAU/",
+    "bandcamp": null
+  },
+  {
+    "id": "anoxia",
+    "name": "Anoxia",
+    "genre": "Death Metal",
+    "location": "Sydney",
+    "image": "/images/bands/anoxia.jpg",
+    "facebook": "https://www.facebook.com/AnoxiaDM",
+    "bandcamp": "https://anoxiadeath.bandcamp.com/releases"
+  },
+  {
+    "id": "artemis-blade",
+    "name": "Artemis Blade",
+    "genre": "Melodic Death Metal",
+    "location": "Hawkesbury",
+    "image": "/images/bands/artemis-blade.jpg",
+    "facebook": "https://www.facebook.com/artemisbladeAU",
+    "bandcamp": "https://theartemisblade.bandcamp.com/releases"
   },
   {
     "id": "asura",
     "name": "Asura",
-    "genre": "Melodic Death Metal",
+    "genre": "Black/Thrash Metal",
     "location": "Sydney",
-    "image": null,
-    "facebook": null,
-    "bandcamp": null
+    "image": "/images/bands/asura.jpg",
+    "facebook": "https://www.facebook.com/AsuraSydney",
+    "bandcamp": "https://asura666.bandcamp.com/"
   }
 ]
