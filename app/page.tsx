@@ -31,17 +31,17 @@ export default function HomePage() {
 
       {/* Community copy */}
       <section className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <p className="font-slab font-light text-white text-xl leading-relaxed mb-4">
+        <p className="font-metal font-normal text-white text-xl leading-relaxed mb-4">
           Check out our Gig Calendar to see all the metal events happening in
           town and never miss out another gig again. Meet the rest of your Metal
           Kin, Check out music from the local artists, watch out for the latest
           news and be part of this growing community.
         </p>
-        <p className="font-slab font-light text-white text-xl leading-relaxed mb-4">
+        <p className="font-metal font-normal text-white text-xl leading-relaxed mb-4">
           Send us your Music and we&apos;ll play it, Give us your news and
           we&apos;ll share it.
         </p>
-        <p className="font-slab font-light text-white text-xl mb-8">
+        <p className="font-metal font-normal text-white text-xl mb-8">
           For the love of Metal,
         </p>
         <Link href="/gig-guide" className="btn-accent text-sm">
