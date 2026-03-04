@@ -18,11 +18,6 @@ export default function HomePage() {
             priority
           />
 
-          <p className="text-gray-300 text-sm max-w-xl mx-auto leading-relaxed font-body">
-            Welcome to the homepage of the Sydney metal community. The one-stop
-            place for everything metal, everything Sydney.
-          </p>
-
           <Link href="/gig-guide" className="btn-accent text-sm">
             GIG CALENDAR
           </Link>
